@@ -21,8 +21,14 @@ export default {
 </script>
 
 <style lang="scss">
+*{
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
 #app {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 </style>
