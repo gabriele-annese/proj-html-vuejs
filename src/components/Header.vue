@@ -54,6 +54,8 @@ data(){
 
 <style lang="scss" scoped>
     header{
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;

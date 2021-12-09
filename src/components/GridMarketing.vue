@@ -71,10 +71,12 @@ data(){
 
 <style lang="scss" scoped>
 .marketOnline{
+    width: 80%;
+    margin: 0 auto;
     display: flex;
+    padding-top: 80px;
 }
  .marketOnline-ctn{
-     margin-top: 80px;
      display: flex;
      width: calc(100% / 3);
      margin-right: 20px;
@@ -94,7 +96,7 @@ data(){
         p{
             margin-top: 10px;
             line-height: 25px;
-            color: #8e989f;
+            color: #495057;
             font-size: 18px;
         }
         ul{

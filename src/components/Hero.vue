@@ -25,11 +25,11 @@ name: 'Hero',
 
 <style lang="scss" scoped>
     .hero-ctn{
-        width: 100%;
+        width: 80%;
+        margin: 30px auto;
         height: 500px;
         background-color: #f2f7ff;
         border-radius: 8px;
-        margin: 30px;
         display: flex;
         .tex-ctn{
             height: 200px;
@@ -41,7 +41,7 @@ name: 'Hero',
             p{
                 margin-top: 20px;
                 line-height: 23px;
-                color: #8e989f;
+                color: #495057;
                 font-weight: 500;
             }
             button{

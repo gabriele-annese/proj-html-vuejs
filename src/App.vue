@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-    <div class="container">
-      <Header />
-      <Main />
-    </div>
+    <Header />
+    <Main />
     <Footer />
   </div>
 </template>
@@ -28,10 +26,6 @@ export default {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-}
-.container {
-  width: 80%;
-  margin: 0 auto;
 }
 .btn{
       padding: 10px 8px;
