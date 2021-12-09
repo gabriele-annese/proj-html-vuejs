@@ -96,8 +96,10 @@ methods:{
     }
     .right{
         width: 60%;
+        position: relative;
         .img-ctn{
-            margin-left: 40px;
+            position: absolute;
+            right: 50px;
         }
     }
 }
