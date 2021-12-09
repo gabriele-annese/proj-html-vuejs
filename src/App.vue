@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <Header />
-    <Main />
+    <div class="container">
+      <Header />
+      <Main />
+    </div>
     <Footer />
   </div>
 </template>
@@ -27,7 +29,7 @@ export default {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
-#app {
+.container {
   width: 80%;
   margin: 0 auto;
 }
