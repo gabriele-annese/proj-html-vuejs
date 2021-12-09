@@ -83,11 +83,13 @@ data(){
 <style lang="scss" scoped>
 .footer-ctn{
     border-top: 1px solid grey;
+    margin-top: 30px;
     .footer-content{
         width: 80%;
         margin: 0 auto;
         display: flex;
         padding-top: 50px;
+        padding-bottom: 30px;
         ul{
             list-style: none;
             width: calc(100% / 4);
