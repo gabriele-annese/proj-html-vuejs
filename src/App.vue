@@ -31,4 +31,16 @@ export default {
   width: 80%;
   margin: 0 auto;
 }
+.btn{
+      padding: 10px 8px;
+      font-weight: 500;
+      cursor: pointer;
+      color: #fff;
+      background-color: #377dff;
+      border: 0;
+      border-radius: 5px;
+      &:hover{
+          background-color: #1e1e1e;
+      }
+  }
 </style>

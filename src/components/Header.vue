@@ -26,7 +26,7 @@
                     </li>
                 </ul>
                 <ul class="btn-ctn">
-                    <button>
+                    <button class="btn">
                         Get Started
                     </button>
                 </ul>
@@ -123,18 +123,6 @@ data(){
             }
             .btn-ctn{
                 margin-left: 20px;
-                button{
-                    padding: 13px 8px;
-                    font-weight: 500;
-                    cursor: pointer;
-                    color: #fff;
-                    background-color: #377dff;
-                    border: 0;
-                    border-radius: 5px;
-                    &:hover{
-                        background-color: #1e1e1e;
-                    }
-                }
             }
         }
     }
