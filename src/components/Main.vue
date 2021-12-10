@@ -6,6 +6,7 @@
         <GridBusiness />
         <Testimonials />
         <GrdiPost />
+        <Maps />
     </div>
 </template>
 
@@ -16,6 +17,7 @@ import Analysis from './Analysis.vue'
 import GridBusiness from './GridBusiness.vue'
 import Testimonials from './Testimonials.vue'
 import GrdiPost from './GrdiPost.vue'
+import Maps from './Maps.vue'
 export default {
 name: 'Main',
 components: {
@@ -25,6 +27,7 @@ components: {
     GridBusiness,
     Testimonials,
     GrdiPost,
+    Maps,
 }
 }
 </script>
