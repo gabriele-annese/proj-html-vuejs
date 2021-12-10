@@ -73,6 +73,15 @@ methods:{
                 align-items: center;
                 margin-top: 30px;
                 cursor: pointer;
+                &:hover,
+                &:focus{
+                    border: 1px solid lightgray;
+                    padding: 10px 0;
+                    box-shadow: -10px  10px 5px rgba($color: #1e1e1e, $alpha: .2);
+                    h3{
+                        color: #377dff;
+                    }
+                }
                 .imgCtn-list{
                     width: 100px;
                     height: 100px;
@@ -83,14 +92,6 @@ methods:{
                         object-fit: contain;
                     }
                 }
-            }
-        }
-        .active{
-            border: 1px solid lightgray;
-            padding: 10px 0;
-            box-shadow: -10px  10px 5px rgba($color: #1e1e1e, $alpha: .2);
-            h3{
-                color: #377dff;
             }
         }
     }

@@ -81,8 +81,8 @@ data(){
      width: calc(100% / 3);
      margin-right: 20px;
     .img-ctn{
-        width: 110px;
-        height: 80px;
+        width: 150px;
+        height:90px;
         img{
             width: 100%;
             height: 100%;
