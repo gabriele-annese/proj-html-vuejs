@@ -47,11 +47,16 @@
                 <p>0 1223 456 789</p>
                 <a href="/">mail@sofboz.com</a>
             </div>
-            <div class="info-social">
-                <div v-for="(elSocial, i) in socialIcon" :key="`el-${i}`">
-                    <i :class="elSocial"></i>
+
+            <div class="wrapper">
+                <div class="button" v-for="(elSocial, i) in socialIcon" :key="`el-${i}`">
+                    <div class="icon">
+                        <i :class="elSocial.class"></i>
+                    </div>
+                    <span>{{elSocial.name}}</span>
                 </div>
             </div>
+
             <form class="message-ctn">
                 <div class="name-ctn">
                     <input type="name" placeholder="Your Name" class="name">
@@ -78,10 +83,22 @@ export default {
     data(){
         return{
             socialIcon:[
-                'fab fa-twitter',
-                'fab fa-facebook-f',
-                'fab fa-instagram',
-                'fab fa-github'
+                {
+                    name: 'Twitter',
+                    class: 'fab fa-twitter',
+                },
+                {
+                    name: 'Facebook',
+                    class: 'fab fa-facebook-f'
+                },
+                {
+                    name: 'Instagram',
+                    class: 'fab fa-instagram',
+                },
+                {
+                    name: 'Github',
+                    class: 'fab fa-github'
+                },
             ]
         }
     }
@@ -229,23 +246,73 @@ export default {
                 }
             }
         }
-    .info-social{
-        display: flex;
-        div{
-            width: 30px;
-            height: 30px;
-            border: 1px solid #f2f7ff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 3px;
-            i{
-            cursor: pointer; 
-            padding: 0 10px;
-            color: #377dff;
+        .wrapper{
+            margin: 20px 0;
+            .button{
+                display: inline-block;
+                height: 60px;
+                width: 60px;
+                margin: 0 5px;
+                overflow: hidden;
+                background: #fff;
+                border-radius: 50px;
+                cursor: pointer;
+                box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+                transition: all 0.3s ease-out;
+                    &:hover{
+                        width: 200px;
+                    }
+                    &:hover i{
+                        color: #fff;
+                    }
+                    .icon{
+                        display: inline-block;
+                        height: 60px;
+                        width: 60px;
+                        text-align: center;
+                        border-radius: 50px;
+                        box-sizing: border-box;
+                        line-height: 60px;
+                        transition: all 0.3s ease-out;
+                        i{
+                            font-size: 25px;
+                            line-height: 60px;
+                            transition: all 0.3s ease-out;
+                        }
+                    }
+                    &:nth-child(1):hover .icon{
+                        background: #1DA1F2;
+                    }
+                    &:nth-child(2):hover .icon{
+                        background: #4267B2;
+                    }
+                    &:nth-child(3):hover .icon{
+                        background: #E1306C;
+                    }
+                    &:nth-child(4):hover .icon{
+                        background: #333;
+                    }
+                    span{
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 60px;
+                    margin-left: 10px;
+                    transition: all 0.3s ease-out;
+                    }
+                    &:nth-child(1) span {
+                        color: #1DA1F2;
+                    }
+                    &:nth-child(2) span {
+                        color: #4267B2;
+                    }
+                    &:nth-child(3) span {
+                        color: #E1306C;
+                    }
+                    &:nth-child(4) span  {
+                        color: #333;
+                    }
+                }
             }
-        }
-    }
     .message-ctn{
         display: flex;
         flex-direction: column;
