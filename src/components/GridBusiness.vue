@@ -118,12 +118,21 @@ section{
                 border-radius: 5px;
                 cursor: pointer;
                 border: 1px solid rgba($color: #000008, $alpha: 0.2);
+                box-shadow: -8px  8px 5px rgba($color: #1e1e1e, $alpha: .2);
                 i{
                     font-size: 40px;
                     padding-top: 20px;
                 }
                 &:hover{
-                    box-shadow: -8px  8px 5px rgba($color: #1e1e1e, $alpha: .2);
+                    background-color: #6cdac1;
+                    border: 0;
+                    box-shadow: 7px  10px 10px rgba($color: #6cdac1, $alpha: 0.8);;
+                    h4{
+                        color: #fff;
+                    }
+                    i{
+                        color: #fff;
+                    }
                 }
             }
         }
