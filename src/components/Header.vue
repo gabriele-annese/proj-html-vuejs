@@ -13,8 +13,11 @@
                     </a>
                 </li>
                 <ul class="search-ctn">
-                    <li>
-                        <i class="fas fa-search"></i>
+                    <li class="search-box">
+                        <button type= "submit" class="btn-search">
+                             <i class="fas fa-search"></i>
+                        </button>
+                        <input type="text" class="input-search" placeholder="Cerca">
                     </li>
                     <li>
                         <div class="cart-ctn">
@@ -127,5 +130,60 @@ data(){
                 margin-left: 20px;
             }
         }
+    .search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin-right:  20px;
+    }
+    .input-search{
+    height: 30px;
+    width: 30px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: transparent;
+    padding-right: 40px;
+    color: #000;
+    }
+    .input-search::placeholder{
+    color: #000;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    }
+    .btn-search{
+    width: 30px;
+    height: 30px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    color:#fff;
+    background-color:transparent;
+    pointer-events: painted;
+    }
+    .btn-search:focus ~ .input-search{
+    width: 300px;
+    background-color: transparent;
+    border:1px solid rgba($color: #8e989f, $alpha: 1.0);
+    border-radius: 20px;
+    transition: all 0.5s cubic-bezier(0, 0.110, 0.35, 2);
+    }
+    .input-search:focus{
+    width: 300px;
+    background-color: transparent;
+    border:1px solid rgba($color: #8e989f, $alpha: 1.0);
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0, 0.110, 0.35, 2)
+    }
+    
     }
 </style>

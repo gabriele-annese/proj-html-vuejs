@@ -43,7 +43,8 @@
              </div>
          </div>
         <div class="check-ctn">
-            <!-- inserire-check-box -->
+            <button class="radio1"></button>
+            <button class="radio2"></button>
         </div>
      </div>
   </section>
@@ -122,6 +123,25 @@ section .img-ctn img{
                 padding: 10px 0;
                 text-align: center;
                 color: #8e989f;
+            }
+        }
+    }
+    .check-ctn{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        .radio1,
+        .radio2{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+            background-color: #000;
+            cursor: pointer;
+            border: 0;
+            &:focus,
+            &:hover{
+                background-color: #377dff;
             }
         }
     }
