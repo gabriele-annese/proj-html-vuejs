@@ -6,7 +6,37 @@
       </div>
       <section>
         <div class="maps-ctn">
-
+            <img src="../assets/img/StaticMapService.GetMapIma.png" alt="">
+            <div class="card-address">
+                <div class="left">
+                    <h4>Storey Ave</h4>
+                    <p>San Fransisco California 94129</p>
+                    <a href="/">Visualizza mappa piú grande</a>
+                </div>
+                <div class="right">
+                    <div class="img-ctn">
+                        <img src="../assets/img/Arrow.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="point-ctn">
+                <img src="../assets/img/pointRed.png" alt="">
+            </div>
+            <div class="info">
+                <span>Dati mappa @2020</span>
+                <span>Termini e condizioni d'uso</span>
+                <span>Segnala un errore nella mappa</span>
+            </div>
+            <div class="btn-ctn">
+                <div class="zoom">
+                    <div class="plus">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="minus">
+                        <i class="fas fa-minus"></i>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="info-ctn">
             <div class="brand">
@@ -78,8 +108,105 @@ export default {
     }
     .maps-ctn{
         width: 50%;
-        height: 300px;
+        height: 500px;
         background-color: green;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-address{
+            width: 70%;
+            background-color: #fff;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 15px 10px;
+            display: flex;
+            .left{
+                width: 50%;
+                p{
+                padding: 10px 0;
+                }
+                a{
+                    padding: 20px 0;
+                    color: #377dff;
+                }
+            }
+            .right{
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .img-ctn{
+                    width: 80px;
+                    height: 80px;
+                    margin-right: 30px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .point-ctn{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .info{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            justify-content: flex-end;
+            span{
+                border: 1px solid #00000014;
+                background: #f2f7ff;
+                padding: 0 5px;
+                font-weight: bold;
+                font-size: 10px;
+                cursor: pointer;
+            }
+        }
+        .btn-ctn{
+            position: absolute;
+            right: 10px;
+            bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            .zoom{
+                background: #f2f7ff;
+                .plus,
+                .minus{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 40px;
+                    height: 37px;
+                    cursor: pointer;
+                    padding: 10px 0;
+                    i{
+                        color: #495057;
+                        font-size: 23px;
+                    }
+                }
+                .plus{
+                    border-bottom: 1px solid #000;
+                }
+            }
+
+        }
     }
     .info-ctn{
         width: 50%;
