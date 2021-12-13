@@ -17,7 +17,7 @@
                         <button type= "submit" class="btn-search">
                              <i class="fas fa-search"></i>
                         </button>
-                        <input type="text" class="input-search" placeholder="Cerca">
+                        <input type="text" class="input-search" placeholder="Cerca" v-model.trim="text" @keyup.enter="clear">
                     </li>
                     <li>
                         <div class="cart-ctn">
@@ -43,6 +43,7 @@ export default {
 name: 'Header',
 data(){
     return{
+        text: '',
         navBar: [
             'Home',
             'About us',
@@ -50,6 +51,11 @@ data(){
             'Testimonials',
             'Contact US'
         ]
+    }
+},
+methods:{
+    clear(){
+        this.text = ''
     }
 }
 }
