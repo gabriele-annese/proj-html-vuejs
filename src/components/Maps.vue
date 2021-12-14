@@ -6,7 +6,8 @@
       </div>
       <section>
         <div class="maps-ctn">
-            <img src="../assets/img/StaticMapService.GetMapIma.png" alt="">
+            <GoogleMapLoader />
+            <!-- <img src="../assets/img/StaticMapService.GetMapIma.png" alt="">
             <div class="card-address">
                 <div class="left">
                     <h4>Storey Ave</h4>
@@ -36,7 +37,7 @@
                         <i class="fas fa-minus"></i>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="info-ctn">
             <div class="brand">
@@ -78,8 +79,12 @@
 </template>
 
 <script>
+import GoogleMapLoader from './GoogleMapLoader.vue'
 export default {
     name: 'Maps',
+    components:{
+        GoogleMapLoader
+    },
     data(){
         return{
             socialIcon:[
